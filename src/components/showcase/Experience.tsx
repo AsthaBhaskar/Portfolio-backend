@@ -10,71 +10,49 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>Hover</h1>
+                        <h1>Insight Labs AI</h1>
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href={'https://hover.gg/'}
+                            href={'https://insightlabs.me/'}
                         >
-                            <h4>www.hover.gg</h4>
+                            <h4>www.insightlabs.me</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Frontend Engineer</h3>
+                        <h3>AI System Engineer Intern</h3>
                         <b>
-                            <p>Summer 2020 - Fall 2021</p>
+                            <p>Feb 2025 - August 2025</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Targeted towards online content creators and streamers
-                    looking to build a brand, Hover is the home of over 150K
-                    users. Written in Typescript using React, React-Native,
-                    Framer, Express, and Redux.
+                    Working on cutting-edge AI solutions and automation systems
+                    for social media engagement and real-time analytics. Focused on
+                    building intelligent systems using modern AI technologies and cloud platforms.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Architected and engineered the vertical scrolling
-                            discover player which, at its daily peak, was
-                            responsible for generating over 600,000 views across
-                            20,000 active users.
+                            Built an automated Twitter Post, Search & Reply Bot using n8n, Grok3, OpenAI embeddings, and Supabase, enabling real-time engagement and growth in social presence.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Designed and implemented multiple features to
-                            increase app usability and user experience while
-                            ensuring the quality, maintainability and
-                            scalability of the front end as the user base grew
-                            by over 50,000.
+                            Developed a server-side dynamic dashboard powered by live API data with MERN stack, providing real-time analytics and interactive visualizations.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Coordinated major refactors targeted towards app
-                            optimization and performance resulting in a smoother
-                            user experience and accomplished by eliminating
-                            redundant re-renders and API calls by over 50%.
+                            Designed and deployed an AI chatbot with a customized personality using Google ADK, AWS Strands, and Grok4 LLM, tailored for domain-specific conversational experiences.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Directed and executed an internal migration of 3
-                            individual repositories to a single monorepo,
-                            greatly reducing overhead for developing new
-                            features, fixing bugs, and managing dependencies.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Rebuilt the website with React and shared mobile app
-                            components allowing users to access a wide variety
-                            of app interactions entirely on the web, resulting
-                            in over 700,000 total site visits.
+                            Created a crypto-oriented, voice-based conversational AI assistant leveraging Supabase real-time data feeds, ElevenLabs voice synthesis, and MERN, offering natural, voice-driven insights and interactions.
                         </p>
                     </li>
                 </ul>
@@ -82,55 +60,53 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>BrACS</h1>
+                        <h1>Ernst & Young (EY)</h1>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href={'https://bracs.co/'}
+                            href={'https://www.ey.com/'}
                         >
-                            <h4>www.bracs.co</h4>
+                            <h4>www.ey.com</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Team Lead & Engineer</h3>
+                        <h3>GenAI Summer Intern</h3>
                         <b>
-                            <p>Fall 2021 - Spring 2022</p>
+                            <p>May 2024 - August 2024</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Supervised and developed the front end of bracs.co, a
-                    beautifully simple and effective bracket creation and
-                    management engine. Written in Typescript using React and
-                    deployed using AWS Elastic Beanstalk.
+                    Worked on advanced AI applications for maritime legal compliance and fuel management optimization. 
+                    Focused on developing RAG applications and machine learning models for real-world business applications.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Managed the project and team members by conducting
-                            bi-weekly stand-ups.
+                            Developed a Retrieval-Augmented Generation (RAG) application for Maritime Legal Compliance, improving legal research efficiency and compliance.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Architected bracket view UI using React Flow and
-                            custom bracket data types built from binary trees.
+                            Fine-tuned the LLAMA3.1 model with specialized legal datasets, integrated unsupervised learning techniques (LoRA embeddings, Gradio) to enhance legal advice generation.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Created conversion algorithms to serialize bracket
-                            tree data to allow for saving in the cloud.
+                            Achieved a 92.62 ROUGE score for rapid retrieval of relevant legal information, empowering legal practitioners in navigating complex maritime regulations.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Implemented bracket generation utilities which
-                            employ gray code for proper team seeding and
-                            placement.
+                            Designed an AI-powered Fuel Management and Route Optimization System for tugboats using machine learning models to predict fuel consumption and optimize routes.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Achieved a 0.9638 R² score with Grid Search Gradient Boosting Regressor and Simulated Annealing Algorithm, reducing fuel costs and optimizing routes by 20%.
                         </p>
                     </li>
                 </ul>
@@ -138,101 +114,77 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>K-F/X</h1>
+                        <h1>Ignitus</h1>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href={'https://kfxnyc.com/'}
+                            href={'https://www.linkedin.com/company/igniteus/'}
                         >
-                            <h4>www.kfxnyc.com</h4>
+                            <h4>www.ignitus.org</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Special Effects Technician</h3>
+                        <h3>Machine Learning Intern</h3>
                         <b>
-                            <p>Fall 2019, Summer 2021</p>
+                            <p>Jan. 2024 - May 2024</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Applied problem solving and technical skills to operate
-                    large equipment such as rain machines, fog machines, small
-                    explosives and general rigging with a professional crew of
-                    50+ people.
+                    Worked on text generation models and NLP research for educational content creation. 
+                    Focused on developing machine learning solutions for automated content generation in MOOC courses.
                 </p>
                 <br />
-                <h3 style={styles.indent}>Screen Credits:</h3>
                 <ul>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/ray-donovan"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
+                            Developed a text generation model using NLP Markov chains on diverse datasets, enhancing creative text generation and automated content creation.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan: The Movie</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/titles/3508117/ray-donovan-the-movie"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
+                            Conducted research optimizing the model for MOOC courses, contributing to innovative educational content generation.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Hightown</p>
+                </ul>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>NCRTC</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://ncrtc.in/'}
+                        >
+                            <h4>www.ncrtc.in</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Summer Intern</h3>
+                        <b>
+                            <p>June 2023 - July 2023</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Worked on computer vision and AI applications for transportation systems. 
+                    Focused on developing vehicle detection and recognition systems using deep learning techniques.
+                </p>
+                <br />
+                <ul>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.starz.com/us/en/series/hightown/57463"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                STARZ
-                            </a>{' '}
-                            ]
+                            Designed and implemented an AI-powered Vehicle Detection and License Plate Recognition System using YOLOv8, OCR and deepSORT, achieving high accuracy in real-time vehicle detection.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Bull</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.cbs.com/shows/bull/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                CBS
-                            </a>{' '}
-                            ]
-                        </p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• At Home with Amy Sedaris</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.trutv.com/shows/at-home-with-amy-sedaris"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                truTV
-                            </a>{' '}
-                            ]
+                            Conducted research and developed a face detection model for HoloLens-2, optimizing accuracy and efficiency for enhanced user experience.
                         </p>
                     </li>
                 </ul>

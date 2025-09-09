@@ -56,29 +56,26 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
         try {
             setIsLoading(true);
+            
+            // Use Formspree for reliable email delivery
             const res = await fetch(
-                'https://api.henryheffernan.com/api/contact',
+                'https://formspree.io/f/xblawgeo',
                 {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        company,
-                        email,
-                        name,
-                        message,
+                        name: name,
+                        email: email,
+                        company: company,
+                        message: message,
+                        _subject: `Portfolio Contact from ${name}`,
                     }),
                 }
             );
-            // the response will be either {success: true} or {success: false, error: message}
-            const data = (await res.json()) as
-                | {
-                      success: false;
-                      error: string;
-                  }
-                | { success: true };
-            if (data.success) {
+            
+            if (res.ok) {
                 setFormMessage(`Message successfully sent. Thank you ${name}!`);
                 setCompany('');
                 setEmail('');
@@ -87,7 +84,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                 setFormMessageColor(colors.blue);
                 setIsLoading(false);
             } else {
-                setFormMessage(data.error);
+                setFormMessage('There was an error sending your message. Please try again.');
                 setFormMessageColor(colors.red);
                 setIsLoading(false);
             }
@@ -116,21 +113,21 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <div style={styles.socials}>
                     <SocialBox
                         icon={ghIcon}
-                        link={'https://github.com/henryjeff'}
+                        link={'https://github.com/AsthaBhaskar'}
                     />
                     <SocialBox
                         icon={inIcon}
-                        link={'https://www.linkedin.com/in/henryheffernan/'}
+                        link={'https://www.linkedin.com/in/astha-bhaskar-5a049b233/'}
                     />
                     <SocialBox
                         icon={twitterIcon}
-                        link={'https://twitter.com/henryheffernan'}
+                        link={'https://x.com/asthaa30'}
                     />
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    I am currently employed, however if you have any
+                    I am currently pursuing my Bachelor's degree and working as an AI System Engineer Intern, however if you have any
                     opportunities, feel free to reach out - I would love to
                     chat! You can reach me via my personal email, or fill out
                     the form below!
@@ -138,8 +135,14 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <br />
                 <p>
                     <b>Email: </b>
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:asthabhaskar30@gmail.com">
+                        asthabhaskar30@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <b>Phone: </b>
+                    <a href="tel:+919810971443">
+                        +91 9810971443
                     </a>
                 </p>
 

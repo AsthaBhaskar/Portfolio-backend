@@ -12,13 +12,11 @@ const About: React.FC<AboutProps> = (props) => {
         <div className="site-page-content">
             {/* <img src={me} style={styles.topImage} alt="" /> */}
             <h1 style={{ marginLeft: -16 }}>Welcome</h1>
-            <h3>I'm Henry Heffernan</h3>
+            <h3>I'm Astha Bhaskar</h3>
             <br />
             <div className="text-block">
                 <p>
-                    I'm a software engineer currently working at Vercel! In May
-                    of 2022 I graduated from Rensselaer Polytechnic Institute
-                    with my BS in Computer Science.
+                    I'm an AI System Engineer and Machine Learning enthusiast currently pursuing my Bachelor's in Computer Science Engineering and Artificial Intelligence at Indira Gandhi Delhi Technical University for Women. I'm passionate about building innovative AI solutions and have extensive experience in Generative AI, Machine Learning, and Full-Stack Development.
                 </p>
                 <br />
                 <p>
@@ -27,8 +25,8 @@ const About: React.FC<AboutProps> = (props) => {
                     building it. If you have any questions or comments, feel
                     free to contact me using{' '}
                     <Link to="/contact">this form</Link> or shoot me an email at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:asthabhakar30@gmail.com">
+                        asthabhakar30@gmail.com
                     </a>
                 </p>
             </div>
@@ -37,14 +35,7 @@ const About: React.FC<AboutProps> = (props) => {
                 <h3>About Me</h3>
                 <br />
                 <p>
-                    From a young age, I have had a curiosity about how things
-                    worked. This naturally led me to become absolutely obsessed
-                    with Lego and I fell in love with building things. In
-                    elementary school, I joined the Lego Robotics team at my
-                    local middle school, which was my first real exposure to
-                    programming. In 2008, my family and I moved across the
-                    country from California to New York, where I attended middle
-                    school, high school, and college.
+                    My fascination with AI began the first time I watched Iron Man. Seeing JARVIS hold conversations and orchestrate entire scenes felt magical. Even before I understood it was movie make‑believe, I knew I wanted to build something like that. That spark never left—and it grew into a mission to create useful, human‑centered intelligent systems.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -58,32 +49,12 @@ const About: React.FC<AboutProps> = (props) => {
                 </div>
 
                 <p>
-                    I started programming more seriously in high school,
-                    initially learning how to scrape and interact with websites.
-                    I went on to do a ton of passion projects, many of them with
-                    one of my closest friends,{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/scott-bass-189a7919b/"
-                    >
-                        Scott Bass
-                    </a>
-                    . We worked on many projects together, including chat bots,
-                    multiple game projects, apps, and more. One of these
-                    projects is viewable on my{' '}
+                    At Indira Gandhi Delhi Technical University for Women(IGDTUW), I began turning that curiosity into practice—starting with computer vision and natural language processing. Since then, I’ve built automated ML DL models, Twitter agents, RAG apps for legal compliance, and voice‑driven conversational assistants. Many of these projects are showcased on my{' '}
                     <Link to="/projects/software">Software Projects</Link> page.
                 </p>
                 <br />
                 <p>
-                    In 2017, I got accepted into Rennselear Polytechnic
-                    Institute to study Computer Science. It was my first choice
-                    and I was absolutely ecstatic to be going to such a great
-                    university. At the end of my sophomore year, I got an
-                    internship working for the startup Hover, primarily focusing
-                    on frontend work. I continued to work at Hover on and off
-                    for about a year and a half, until the start of my senior
-                    year when I decided to focus on other opportunities.
+                    In 2021, I got accepted into Indira Gandhi Delhi Technical University for Women(IGDTUW) to pursue Computer Science Engineering and Artificial Intelligence. Along the way, I interned with Ernst & Young (EY), Insight Labs AI, NCRTC and Ignitus—doubling down on Generative AI, Computer Vision, and NLP through hands‑on projects and production work.
                 </p>
                 <br />
                 <br />
@@ -99,23 +70,11 @@ const About: React.FC<AboutProps> = (props) => {
                         <h3>My Hobbies</h3>
                         <br />
                         <p>
-                            Beyond software, I have a lot of hobbies that I
-                            enjoy doing in my free time. The more tangible
-                            hobbies I have are{' '}
-                            <Link to="/projects/music">Music Production</Link>{' '}
-                            and creating{' '}
-                            <Link to="/projects/art">Digital Art</Link>. You can
-                            read more about each of these on their respective
-                            pages under my projects tab. Some other hobbies I
-                            enjoy are working out, cooking, and (unsurprisingly)
-                            playing video games.
+                            Beyond AI, I love exploring ideas—writing, tinkering, and sharing. I’ve published research in IEEE venues on Conversational AI, Credit Card Approval Prediction, and Pet Popularity Scoring, and I contribute to open‑source when I can. You’ll usually find me reading papers, attending AI talks, or experimenting with new models and tools.
                         </p>
                         <br />
                         <p>
-                            In college, I was an active member in the fraternity
-                            Sigma Alpha Epsilon and held multiple positions in
-                            the chapter. I met a lot of amazing people through
-                            my fraternity and thoroughly enjoyed the community.
+                            During my academic journey, I have been actively involved in research and have contributed to multiple publications in prestigious conferences. I believe in the power of AI to solve real-world problems and am always excited to work on projects that can make a meaningful impact in society. I believe AI should be practical, transparent, and helpful. My goal is simple: build systems that feel as intuitive as JARVIS—minus the Hollywood budget.
                         </p>
                     </div>
                     <div style={styles.verticalImage}>
@@ -132,16 +91,7 @@ const About: React.FC<AboutProps> = (props) => {
                 <p>
                     Thanks for reading about me! I hope that you enjoy exploring
                     the rest of my portfolio website and everything it has to
-                    offer. If you find the easter egg make sure to let me know
-                    on twitter{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://twitter.com/henryheffernan"
-                    >
-                        @henryheffernan
-                    </a>{' '}
-                    Good luck and have fun!
+                    offer. Feel free to connect with me on LinkedIn or GitHub to learn more about my work and projects.
                 </p>
                 <br />
                 <p>
@@ -149,8 +99,8 @@ const About: React.FC<AboutProps> = (props) => {
                     them. You can reach me through the{' '}
                     <Link to="/contact">contact page</Link> or shoot me an email
                     at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:asthabhaskar30@gmail.com">
+                        asthabhaskar30@gmail.com
                     </a>
                 </p>
             </div>

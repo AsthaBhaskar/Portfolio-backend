@@ -1,10 +1,10 @@
 import React from 'react';
 // @ts-ignore
-import saga from '../../../assets/pictures/projects/software/saga.mp4';
-// @ts-ignore
 import computer from '../../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
-import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
+import kapturVideo from '../../../assets/pictures/projects/software/Kaptur.mp4';
+// @ts-ignore
+import atsVideo from '../../../assets/pictures/projects/software/ATS.mp4';
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 
@@ -13,264 +13,162 @@ export interface SoftwareProjectsProps {}
 const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
     return (
         <div className="site-page-content">
-            <h1>Software</h1>
+            <h1>AI & Software</h1>
             <h3>Projects</h3>
             <br />
             <p>
-                Below are some of my favorite software projects I have worked on
-                over the last few years.
+                Below are some of my favorite AI and software projects I have worked on
+                over the last few years, showcasing my expertise in machine learning, 
+                generative AI, and full-stack development.
             </p>
             <br />
             <ResumeDownload />
             <br />
             <div className="text-block">
-                <h2>henryheffernan.com</h2>
+                <h2>Personal Portfolio Website</h2>
                 <br />
                 <p>
-                    henryheffernan.com is my portfolio website, and also the
-                    website you are on right now. This project was an absolute
-                    joy to make and challenged me both technically and
-                    creatively. Early in 2022, I knew I wanted to make an
-                    interactive portfolio to aid my job search. I eventually got
-                    the idea for this site around early February and began
-                    development early March. I've been developing it alongside
-                    my last semester at school and if you are reading this, it's
-                    pretty much done!
+                    An interactive, OS‑style portfolio built with React and TypeScript. It includes draggable, resizable windows,
+                    a desktop with shortcuts, and an internal app that routes to pages like About, Experience, Projects, and Contact.
+                    The site is designed to feel playful and retro while remaining fast and accessible.
                 </p>
                 <br />
                 <div className="captioned-image">
                     <VideoAsset src={computer} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 1:</b> Blender Scene of the 3D website.
-                            The scene from Blender was baked and exported in a
-                            GLTF format.
+                            <b>Figure 1:</b> Demo of the portfolio interface with OS‑style windowing.
                         </sub>
                     </p>
                 </div>
                 <p>
-                    Now, a quick technical breakdown of the site. The website is
-                    split into two parts, the 3D site, and the 2D OS site. The
-                    3D site uses Three.js to render the scene and renders the 2D
-                    site inside of it using an iframe. The 2D OS site is a
-                    simple react site that is hosted{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://henryheffernan.vercel.app/"
-                    >
-                        here
-                    </a>{' '}
-                    and works as a standalone web app. The actual rendering of
-                    the 2D site is accomplished using a CSS renderer provided by
-                    Three.js that transforms the html of the 2D site with 3D CSS
-                    transforms to give the illusion of three dimensionality.
+                    Built with React, TypeScript, and React Router, styled with custom CSS to emulate classic desktop UI. The
+                    portfolio runs as a single‑page app and can be deployed to any static host.
                 </p>
                 <br />
-                <h3>Links:</h3>
+                <h3>Technologies Used:</h3>
                 <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://henryheffernan.com"
-                        >
-                            <p>
-                                <b>[3D Site]</b> - henryheffernan.com
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://henryheffernan.vercel.app/"
-                        >
-                            <p>
-                                <b>[OS Site]</b> - henryheffernan.vercel.app
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/portfolio-website"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - 3D Site Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/portfolio-inner-site"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - OS Site Repository
-                            </p>
-                        </a>
-                    </li>
+                    <li><p>React, TypeScript, React Router</p></li>
+                    <li><p>Custom CSS, retro OS‑style components</p></li>
+                    <li><p>Deployment: Vercel/Netlify or any static host</p></li>
                 </ul>
-                <p>
-                    I'm skipping over a lot of details in exchange for brevity,
-                    but I do plan on doing a more in depth breakdown for those
-                    interested sometime in the future. To get updates with that
-                    project feel free to follow me on twitter{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://twitter.com/henryheffernan"
-                    >
-                        @henryheffernan
-                    </a>
-                </p>
+                <br />
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><p>Desktop OS‑style UI with draggable/resizable windows</p></li>
+                    <li><p>In‑window router for About/Experience/Projects/Contact</p></li>
+                    <li><p>Lightweight and fast SPA</p></li>
+                </ul>
             </div>
             <div className="text-block">
-                <h2>Guntattchment Saga The Sequel</h2>
+                <h2>Kaptur: Full-Stack Social Media App</h2>
                 <br />
                 <p>
-                    Guntattchment Saga or GSTS is a game I made with my good
-                    friend Scott Bass back in 2019. The game is a wave based top
-                    down shooter where you progress by building the most
-                    outrageous of weapons through attaching as many attachments
-                    on your weapon as you can. The game ceased development in
-                    2019 because we unfortunately both had packed school
-                    schedules and were unable to find the time to work on it.
+                    Kaptur is a comprehensive full‑stack social media application built using the MERN stack. It includes
+                    secure auth, a real‑time UX, and cloud‑hosted media.
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={saga} />
-                    <div style={styles.caption}>
-                        <p>
+                    <VideoAsset src={kapturVideo} />
+                    <p style={styles.caption}>
+                        <sub>
+                            <b>Figure 2:</b> Demo of the Kaptur: Full-Stack Social Media App.
+                        </sub>
+                    </p>
+                </div>
+                <p>
+                    React + TailwindCSS frontend, Node.js/Express backend with JWT, MongoDB for data, and Cloudinary for media. 
+                    Deployed on Vercel (frontend) and Render (backend).
+                </p>
+                <br />
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li><p>Frontend: React, TailwindCSS</p></li>
+                    <li><p>Backend: Node.js, Express, JWT</p></li>
+                    <li><p>Database: MongoDB</p></li>
+                    <li><p>Storage: Cloudinary</p></li>
+                    <li><p>Deployment: Vercel, Render</p></li>
+                </ul>
+            </div>
+            <div className="text-block">
+                <h2>AI-Driven Resume and Job Alignment System</h2>
+                <br />
+                <p>
+                    Developed an intelligent resume analysis application using Google Generative AI (Gemini 1.5 Flash) API. 
+                    This project provides personalized ATS and HR feedback, identifying missing keywords and offering 
+                    personalized advice to help job seekers optimize their resumes for better job matching.
+                </p>
+                <br />
+                <div className="captioned-image">
+                    <VideoAsset src={atsVideo} />
+                    <div>
+                        <p style={styles.caption}>
                             <sub>
-                                <b>Figure 2: </b> Guntattchment Saga Gameplay
-                                demo, featuring the main character along with a
-                                few of our grunt and dasher enemies.
+                                <b>Figure 3:</b> Demo of the AI-Driven Resume and Job Alignment System.
                             </sub>
                         </p>
                     </div>
                 </div>
                 <p>
-                    Guntattchment Saga was a really fun project to work on and
-                    had a multitude of challenges. An interesting challenge that
-                    you may not even notice was the rotation of objects such as
-                    the players weapon. Rotating pixel art is a very difficult
-                    thing to do because in the world of pixels you are dealing
-                    with such a little amount of information. Even a single
-                    misplaced pixel can cause a sprite to read in a totally
-                    different and unintended way. To deal with this we developed
-                    an algorithm to prioritize outlines, while rotating the
-                    insides with a simple Nearest Neighbor algorithm. Doing so
-                    resulted in a relatively readable sprite when rotating
-                    sprites. It was a surprisingly difficult challenge as it
-                    intersected both art and programming, but was fun to work on
-                    overall.
+                    The system leverages advanced NLP techniques and Google's Gemini 1.5 Flash model to analyze resume content, 
+                    compare it against job descriptions, and provide actionable insights. The application includes PDF processing 
+                    capabilities using PDF2Image and Langchain for document handling, making it easy for users to upload and 
+                    analyze their resumes.
                 </p>
                 <br />
-                <h3>Links:</h3>
+                <h3>Technologies Used:</h3>
                 <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/scottbass47/gsts"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
-                                Unity Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/gsts_assets"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
-                                Assets Repository
-                            </p>
-                        </a>
-                    </li>
+                    <li><p>AI/ML: Gemini 1.5 Flash, Langchain</p></li>
+                    <li><p>Frontend: Streamlit, React</p></li>
+                    <li><p>Document Processing: PDF2Image</p></li>
+                    <li><p>NLP: Advanced text analysis and keyword extraction</p></li>
                 </ul>
-                <p>
-                    Unfortunately, the game currently is not in a releasable
-                    state and so there is no demo available online. If this ever
-                    changes, however, a link to the game will be added here.
-                </p>
+                <br />
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><p>Automated resume analysis using AI</p></li>
+                    <li><p>ATS optimization recommendations</p></li>
+                    <li><p>Keyword gap analysis</p></li>
+                    <li><p>Personalized improvement suggestions</p></li>
+                    <li><p>PDF upload and processing</p></li>
+                    <li><p>User-friendly web interface</p></li>
+                </ul>
             </div>
             <div className="text-block">
-                <h2>Skip the Scroll</h2>
+                <h2>Early PCOS Detection using Advanced ML</h2>
                 <br />
                 <p>
-                    While working at Hover, I spent a lot of time on GitHub
-                    issue pages looking for answers and solutions to problems I
-                    had run into. I would always find myself sifting though the
-                    comments trying to find the right answer, which usually had
-                    the most upvotes and positive reactions. With that
-                    information, I decided to create a very simple chrome
-                    extension that would sift through all the comments on the
-                    page, sort them by positive reactions, and then allow you to
-                    traverse them from most positive reactions to least positive
-                    reactions.
+                    Led a comprehensive PCOS (Polycystic Ovary Syndrome) diagnosis project achieving 96.02% accuracy 
+                    by integrating and optimizing machine learning algorithms. This project addresses a critical 
+                    healthcare challenge by developing an AI-powered diagnostic system that can help in early 
+                    detection of PCOS, a common endocrine disorder affecting women.
                 </p>
                 <br />
-                <div className="captioned-image">
-                    <VideoAsset src={scroll} />
-                    <p style={styles.caption}>
-                        <sub>
-                            <b>Figure 3:</b> Skip the Scroll in action, finding
-                            the highest rated comments and scrolling right to
-                            them
-                        </sub>
-                    </p>
-                </div>
+                {/* No video/image requested for this project */}
                 <p>
-                    The extension is open source and currently released on the
-                    Chrome web store. Skip the Scroll is obviously not a project
-                    with massive scope, but was fun to make and dive into the
-                    world of browser extensions. I wanted to showcase since it's
-                    a developer tool and I wanna give it some visibility for
-                    those who might find it useful.
+                    The project utilized a combination of machine learning algorithms including Random Forest, 
+                    XGBoost, and SVM, with advanced data balancing techniques (ADASYN, SMOTE) and feature 
+                    selection methods (chi-square, RFE). The proposed model addresses data imbalance using 
+                    ADASYN and feature selection with Chi-square, utilizing XGBoost for effective classification 
+                    and diagnosis of PCOS.
                 </p>
                 <br />
-                <h3>Links:</h3>
+                <h3>Technologies Used:</h3>
                 <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/skip-the-scroll"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Skip the Scroll Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://chrome.google.com/webstore/detail/skip-the-scroll/mfehannpjmgfagldoilpngeoecdfgmnd"
-                        >
-                            <p>
-                                <b>[Chrome Web Store]</b> - Skip the Scroll
-                            </p>
-                        </a>
-                    </li>
+                    <li><p>ML Algorithms: Random Forest, XGBoost, SVM</p></li>
+                    <li><p>Data Balancing: ADASYN, SMOTE</p></li>
+                    <li><p>Feature Selection: Chi-square, RFE</p></li>
+                    <li><p>Python Libraries: Scikit-learn, Pandas, NumPy</p></li>
                 </ul>
-                <p>
-                    If you are a developer and have also found yourself
-                    scrolling through github comment after github comment saying
-                    "i also have this problem...", then I highly recommend you
-                    check out Skip the Scroll to save you some of your precious
-                    time. If you like it, feel free to star it on GitHub and
-                    rate it on the Chrome web store.
-                </p>
+                <br />
+                <h3>Key Achievements:</h3>
+                <ul>
+                    <li><p>96.02% accuracy in PCOS detection</p></li>
+                    <li><p>Advanced data balancing techniques</p></li>
+                    <li><p>Comprehensive feature selection</p></li>
+                    <li><p>Multiple algorithm comparison</p></li>
+                    <li><p>Real-world healthcare application</p></li>
+                </ul>
             </div>
             <ResumeDownload />
         </div>

@@ -46,17 +46,22 @@ const Toolbar: React.FC<ToolbarProps> = ({
     }, [windows]);
 
     const [time, setTime] = useState(getTime());
-
-    const updateTime = () => {
-        setTime(getTime());
-        setTimeout(() => {
-            updateTime();
-        }, 5000);
-    };
+    const intervalRef = useRef<number | null>(null);
 
     useEffect(() => {
-        updateTime();
-    });
+        // initialize immediately
+        setTime(getTime());
+        // update every 5 seconds
+        intervalRef.current = window.setInterval(() => {
+            setTime(getTime());
+        }, 5000);
+        return () => {
+            if (intervalRef.current !== null) {
+                window.clearInterval(intervalRef.current);
+                intervalRef.current = null;
+            }
+        };
+    }, []);
 
     const onCheckClick = () => {
         if (lastClickInside.current) {
