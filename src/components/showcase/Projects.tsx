@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import software from '../../assets/pictures/projects/software.gif';
+import showcaseIcon from '../../assets/icons/showcaseIcon.png';
 
 export interface ProjectsProps {}
 
@@ -79,6 +80,13 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     title="Software"
                     subtitle="PROJECTS"
                     route="software"
+                />
+                <ProjectBox
+                    icon={showcaseIcon}
+                    iconStyle={styles.computerIcon}
+                    title="Publications"
+                    subtitle="RESEARCH"
+                    route="publications"
                 />
             </div>
         </div>
