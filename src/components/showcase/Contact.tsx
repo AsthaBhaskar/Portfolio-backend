@@ -58,8 +58,9 @@ const Contact: React.FC<ContactProps> = (props) => {
             setIsLoading(true);
             
             // Use Formspree for reliable email delivery
+            // Use custom API route to track IP address
             const res = await fetch(
-                'https://formspree.io/f/xblawgeo',
+                'https://ct-pearl.vercel.app/api/contact',  // Your Vercel URL
                 {
                     method: 'POST',
                     headers: {
