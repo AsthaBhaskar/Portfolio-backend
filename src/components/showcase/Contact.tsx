@@ -228,10 +228,15 @@ const Contact: React.FC<ContactProps> = (props) => {
                                     <sub>
                                         {formMessage
                                             ? `${formMessage}`
-                                            : ' All messages get forwarded straight to my personal email'}
+                                            : ''}
                                     </sub>
                                 </b>
                             </p>
+                            {!formMessage && (
+                                <p style={{ color: 'red', fontWeight: 'bold', marginBottom: 8 }}>
+                                    PLEASE PROVIDE A CORRECT EMAIL ADDRESS - I CAN ONLY REPLY IF YOUR EMAIL IS VALID
+                                </p>
+                            )}
                             <p>
                                 <sub>
                                     {!isFormValid ? (
