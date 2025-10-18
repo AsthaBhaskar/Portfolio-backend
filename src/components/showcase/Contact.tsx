@@ -140,12 +140,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                         asthabhaskar30@gmail.com
                     </a>
                 </p>
-                <p>
-                    <b>Phone: </b>
-                    <a href="tel:+919810971443">
-                        +91 9810971443
-                    </a>
-                </p>
+                
 
                 <div style={styles.form}>
                     <label>
