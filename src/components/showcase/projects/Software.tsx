@@ -7,6 +7,8 @@ import kapturVideo from '../../../assets/pictures/projects/software/Kaptur.mp4';
 import atsVideo from '../../../assets/pictures/projects/software/ATS.mp4';
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
+// @ts-ignore
+import callingAgentVideo from '../../../assets/pictures/projects/software/Calling Agent.mp4';
 
 export interface SoftwareProjectsProps {}
 
@@ -25,6 +27,58 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <ResumeDownload />
             <br />
             <div className="text-block">
+                <h2>AI Calling Restaurant Receptionist Agent</h2>
+                <br />
+                <p>
+                    Built a fully autonomous voice-based restaurant receptionist that answers customer calls, 
+                    checks real-time table availability, and books reservations automatically using AI. 
+                    The agent integrates OpenAI’s conversational intelligence with workflow automation tools 
+                    to deliver a natural and seamless booking experience.
+                </p>
+                <br />
+                <div className="captioned-image">
+                    <VideoAsset src={callingAgentVideo} />
+                    <p style={styles.caption}>
+                        <sub>
+                            <b>Figure 1:</b> Demo of the AI Calling Restaurant Receptionist Agent handling a live booking call.
+                        </sub>
+                    </p>
+                </div>
+                <p>
+                    The system uses <b>OpenAI GPT models </b> to interpret user intent, 
+                    <b>VAPI</b> for voice telephony, and <b>Make.com</b> for orchestrating automation workflows. 
+                    It connects with the <b>Google Calendar API</b> to verify table availability, 
+                    recommend alternate time slots when necessary, and confirm bookings automatically. 
+                    This project demonstrates a practical use of conversational AI for real-world automation.
+                </p>
+                <br />
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li><p>AI/NLP: OpenAI GPT-5 </p></li>
+                    <li><p>Voice Interface: VAPI (Voice AI)</p></li>
+                    <li><p>Automation: Make.com</p></li>
+                    <li><p>Integration: Google Calendar API</p></li>
+                    <li><p>Scheduling: ISO-8601 time logic and slot validation</p></li>
+                </ul>
+                <br />
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><p>Natural, real-time voice conversations for booking</p></li>
+                    <li><p>Automated availability checks via Google Calendar</p></li>
+                    <li><p>Dynamic fallback for alternative time suggestions</p></li>
+                    <li><p>Instant reservation confirmation with event creation</p></li>
+                    <li><p>End-to-end voice automation powered by OpenAI + Make</p></li>
+                </ul>
+                <br />
+                <h3>Impact & Outcome:</h3>
+                <ul>
+                    <li><p>Enabled 24/7 autonomous reservation handling with human-like interactions</p></li>
+                    <li><p>Eliminated manual call handling and booking errors</p></li>
+                    <li><p>Showcased the fusion of conversational AI, voice technology, and automation</p></li>
+                </ul>
+            </div>
+
+            <div className="text-block">
                 <h2>Personal Portfolio Website</h2>
                 <br />
                 <p>
@@ -37,7 +91,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <VideoAsset src={computer} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 1:</b> Demo of the portfolio interface with OS‑style windowing.
+                            <b>Figure 2:</b> Demo of the portfolio interface with OS‑style windowing.
                         </sub>
                     </p>
                 </div>
@@ -72,7 +126,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <VideoAsset src={kapturVideo} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 2:</b> Demo of the Kaptur: Full-Stack Social Media App.
+                            <b>Figure 3:</b> Demo of the Kaptur: Full-Stack Social Media App.
                         </sub>
                     </p>
                 </div>
@@ -104,7 +158,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <div>
                         <p style={styles.caption}>
                             <sub>
-                                <b>Figure 3:</b> Demo of the AI-Driven Resume and Job Alignment System.
+                                <b>Figure 4:</b> Demo of the AI-Driven Resume and Job Alignment System.
                             </sub>
                         </p>
                     </div>
