@@ -10,6 +10,32 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
+                        <h1>Archinza</h1>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href={'https://archinza.com/'}
+                        >
+                            <h4>www.archinza.com</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Jr. AI ML Engineer</h3>
+                        <b>
+                            <p>Jan 2026 - Present</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Developing scalable AI systems for automated insights, conversational interfaces,
+                    and data-driven workflows across product features.
+                </p>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
                         <h1>Insight Labs AI</h1>
                         <a
                             rel="noreferrer"
