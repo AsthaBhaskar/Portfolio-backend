@@ -9,6 +9,8 @@ import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 // @ts-ignore
 import callingAgentVideo from '../../../assets/pictures/projects/software/Calling Agent.mp4';
+// @ts-ignore
+import researchMindVideo from '../../../assets/pictures/projects/software/researchMind.mp4';
 
 export interface SoftwareProjectsProps {}
 
@@ -79,6 +81,65 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             </div>
 
             <div className="text-block">
+                <h2>ResearchMind: Multi-Agent AI Research Pipeline</h2>
+                <br />
+                <p>
+                    Built a fully autonomous multi-agent research pipeline powered by LangGraph, where four
+                    specialized AI agents — Search, Reader, Writer, and Critic — collaborate to produce
+                    high-quality, self-improving research reports from a single topic prompt.
+                </p>
+                <br />
+                <div className="captioned-image">
+                    <VideoAsset src={researchMindVideo} />
+                    <p style={styles.caption}>
+                        <sub>
+                            <b>Figure 2:</b> Demo of ResearchMind — multi-agent pipeline with live progress, critic scoring, and downloadable report.
+                        </sub>
+                    </p>
+                </div>
+                <p>
+                    The system uses a <b>Critic–Writer feedback loop</b> where the Critic scores each draft
+                    out of 10 and injects targeted feedback back into the Writer until the report meets a
+                    quality threshold (default 7/10) or exhausts the revision budget. A{' '}
+                    <b>Supabase semantic cache</b> short-circuits expensive web searches for previously
+                    researched topics, delivering polished reports in a fraction of the time. The
+                    React + Vite frontend streams live node-by-node agent progress via SSE.
+                </p>
+                <br />
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li><p>Agent Framework: LangGraph, LangChain</p></li>
+                    <li><p>LLM: Mistral AI (mistral-small-latest)</p></li>
+                    <li><p>Web Search: Tavily API</p></li>
+                    <li><p>Web Scraping: requests + BeautifulSoup4</p></li>
+                    <li><p>Memory / Cache: Supabase (PostgreSQL)</p></li>
+                    <li><p>Backend: FastAPI (SSE streaming)</p></li>
+                    <li><p>Frontend: React + Vite</p></li>
+                    <li><p>Deployment: Vercel (frontend), Render (backend)</p></li>
+                </ul>
+                <br />
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><p>Four specialized agents collaborating via a shared LangGraph state machine</p></li>
+                    <li><p>Self-improving reports with iterative Critic–Writer revision cycles</p></li>
+                    <li><p>Supabase semantic cache to skip redundant web searches</p></li>
+                    <li><p>Live streaming of agent progress, scores, and critic feedback to the React UI</p></li>
+                    <li><p>Downloadable final reports with structured Introduction, Findings, Conclusion, and Sources</p></li>
+                </ul>
+                <br />
+                <h3>Live Demo:</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <a href="https://multi-agent-research-agent.vercel.app/" target="_blank" rel="noreferrer">
+                                multi-agent-research-agent.vercel.app
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="text-block">
                 <h2>Personal Portfolio Website</h2>
                 <br />
                 <p>
@@ -91,7 +152,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <VideoAsset src={computer} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 2:</b> Demo of the portfolio interface with OS‑style windowing.
+                            <b>Figure 3:</b> Demo of the portfolio interface with OS‑style windowing.
                         </sub>
                     </p>
                 </div>
@@ -126,7 +187,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <VideoAsset src={kapturVideo} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 3:</b> Demo of the Kaptur: Full-Stack Social Media App.
+                            <b>Figure 4:</b> Demo of the Kaptur: Full-Stack Social Media App.
                         </sub>
                     </p>
                 </div>
@@ -158,7 +219,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <div>
                         <p style={styles.caption}>
                             <sub>
-                                <b>Figure 4:</b> Demo of the AI-Driven Resume and Job Alignment System.
+                                <b>Figure 5:</b> Demo of the AI-Driven Resume and Job Alignment System.
                             </sub>
                         </p>
                     </div>
