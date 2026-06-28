@@ -29,7 +29,7 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}
-            bottomLeftText={'© Copyright 2025 Astha Bhaskar'}
+            bottomLeftText={'© Copyright 2026 Astha Bhaskar'}
         >
             <Router>
                 <div className="site-page">
