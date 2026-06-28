@@ -128,8 +128,8 @@ const Contact: React.FC<ContactProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    I am currently pursuing my Bachelor's degree and working as an AI System Engineer Intern, however if you have any
-                    opportunities, feel free to reach out - I would love to
+                    I graduated with my Bachelor's degree in July 2025 and am currently working as a Jr. AI ML Engineer.
+                    If you have any opportunities or just want to connect, feel free to reach out — I would love to
                     chat! You can reach me via my personal email, or fill out
                     the form below!
                 </p>
